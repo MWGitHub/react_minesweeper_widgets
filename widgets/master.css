@@ -1,0 +1,48 @@
+
+/* MAIN */
+li {
+  display: inline-block;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.tab-header li {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  transform: skewX(0deg);
+  transition: transform 2s;
+}
+
+.tab-header li .highlight {
+  transform: skewX(30deg);
+  transition: transform 2s;
+  font-weight: 700;
+}
+
+
+/* AutoComplete Transitions */
+
+.auto-enter {
+ opacity: 0.01;
+ transform: translateX(-200%) translateY(-500%) rotate(45deg);
+}
+
+.auto-enter.auto-enter-active {
+ opacity: 1;
+ transform: translateX(0) translateY(0) rotate(0);
+ transition: all 500ms;
+}
+
+.auto-leave {
+ opacity: 1;
+ transform: translateX(0) translateY(0) rotate(0);
+}
+
+.auto-leave.auto-leave-active {
+ opacity: 0.01;
+ transform: translateX(100%) translateY(500%) rotate(-45deg);
+ transition: all 500ms;
+}

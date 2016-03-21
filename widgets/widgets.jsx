@@ -23,7 +23,7 @@ var Widget = React.createClass({
 
     var names = [
       'Tommy', 'Lilly', 'Leen', 'Fred', 'Sennacy', 'Carl', 'Johnathan',
-      'Breakfast'
+      'Breakfast', 'Brandy', 'Beatrice', 'Bill', 'Steve'
     ];
 
     return (
